@@ -1,0 +1,307 @@
+ .main-a {
+     max-width: 900px;
+     margin: auto;
+     padding-bottom: 80px;
+ }
+
+
+ @media screen and (min-width: 1200px) {
+
+     .main-a {
+
+         min-width: 1500px;
+         padding-left: 30px;
+         font-size: 20px;
+
+
+
+
+     }
+
+
+ }
+
+ @media screen and (max-width: 578px) {
+
+ 
+    
+
+    .col-sm-3{
+        width: 50%;
+        float: left;
+    }
+
+
+ }
+
+ .site-nav {
+     margin: 0;
+     padding-top: 30px;
+ }
+
+ .site-nav li {
+     list-style: none;
+     float: left;
+     margin-right: 5px;
+ }
+
+ .site-nav ul {
+     margin: 0;
+     padding: 0;
+ }
+
+ .site-nav a {
+     display: block;
+     text-decoration: none;
+     color: whitesmoke;
+     padding: 15px 25px;
+     transition: all .5s ease-in-out;
+
+ }
+
+ .site-nav a:hover {
+     background-color: whitesmoke;
+     color: black;
+ }
+
+ @media screen and (max-width: 1023px) {
+
+	.site-nav li {
+		width: 33.332%;
+		margin-right: 0;
+	}
+
+	.site-nav a {
+		padding: 15px 0;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	.site-nav li {
+		width: 50%;
+	}
+
+}
+
+
+
+ /* .images */
+
+ .thumbnail {
+     transition: all 3s;
+ }
+
+ .thumbnail img {
+     transition: all .4s ease-in-out;
+     display: block;
+ }
+
+ .thumbnail:hover img {
+     opacity: .6;
+     transform: scale(.92);
+ }
+
+ .thumbnail img:hover {
+     opacity: 1;
+     transform: scale(1) rotate(2deg);
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+ }
+
+ .col-sm-3 {
+     padding: 8px;
+ }
+
+
+
+
+ /* slide show ,.............. */
+
+ /* btn desgin  */
+ .btn-a {
+     margin-left: 20px;
+     padding: 5px 10px;
+     background-color: rgb(146, 104, 167);
+     color: whitesmoke;
+     text-transform: bold;
+     font-weight: bold;
+     text-decoration: none;
+     font-size: 13px;
+
+ }
+
+ .btn-a:hover {
+     background-color: whitesmoke;
+     color: rgb(146, 104, 167);
+ }
+
+
+ img {
+     display: block;
+     width: 100%;
+
+
+ }
+
+
+ .cycle-pager {
+
+     position: absolute;
+     top: 20px;
+     z-index: 1003;
+     width: 100%;
+     text-align: center;
+
+
+ }
+
+ .cycle-pager span {
+     text-indent: -9999px;
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background-color: #fff;
+     margin: 0 4px;
+     cursor: pointer;
+ }
+
+ .cycle-pager .cycle-pager-active {
+     background-color: black;
+ }
+
+
+
+ .cycle-prev,
+ .cycle-next {
+     position: absolute;
+     top: 40%;
+     background-color: rgba(0, 0, 0, 0.5);
+     color: whitesmoke;
+     z-index: 1000;
+     cursor: pointer;
+     padding: 1px 10px;
+     display: block;
+     opacity: 0;
+     transition: all .5s;
+ }
+
+ .cycle-next {
+     right: 0;
+ }
+
+ .cycle-slideshow:hover .cycle-next,
+ .cycle-slideshow:hover .cycle-prev {
+
+     opacity: 1;
+ }
+
+ /* menu and read more */
+
+ .read-more {
+     text-decoration: underline;
+     color: blue;
+     cursor: pointer;
+ }
+
+ .read-more:hover {
+     text-decoration: none;
+ }
+
+ .toggle-btn {
+     display: none;
+     font-weight: bold;
+     width: 100%;
+     text-align: center;
+     padding: 8px 30px;
+     background-color:whitesmoke ;
+     color: rgba(0, 0, 0, 0.924);
+     border-radius: 2px;
+     transition: all 1s ease-in-out;
+ }
+ .toggle-btn:hover{
+     color: whitesmoke;
+     background-color: rgba(0, 0, 0, 0.924);
+ }
+
+
+ @media screen and (max-width: 767px) {
+
+     .toggle-btn-visible {
+         display: block;
+     }
+
+     .toggle-target-hidden {
+         display: none;
+     }
+
+     .toggle-target-expanded {
+         display: block;
+     }
+
+ }
+
+ .main-area .toggle-btn-visible {
+     display: block;
+ }
+
+ .main-area .toggle-target-hidden {
+     display: none;
+ }
+
+ .main-area .toggle-target-expanded {
+     display: block;
+ }
+
+
+ /* .banner */
+
+ .cycle-slideshow {
+     margin-top: 50px;
+ }
+
+ .slide {
+     position: relative;
+ }
+
+ .slide-text {
+     position: absolute;
+     bottom: 0;
+     color: whitesmoke;
+     background-color: rgba(0, 0, 0, 0.575);
+     padding: 10px;
+
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ @media screen and (max-width: 767px) {
+
+     .slide-text {
+         position: static;
+         background-color: black;
+     }
+
+ }
+
+ .row:before,
+ .row:after,
+ .group:before,
+ .group:after {
+     content: "";
+     display: table;
+ }
+
+ .row:after,
+ .group:after {
+     clear: both;
+ }
+
+ .row,
+ .group {
+     zoom: 1;
+ }
